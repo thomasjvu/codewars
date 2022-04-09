@@ -38,10 +38,10 @@ function Ship(draft, crew) {
     this.draft = draft
     this.crew = crew
     this.isWorthIt = function() {
-        return (draft - crew >= 20)
+        return (draft - crew * 1.5 > 20)
     }
 }
 
 // Explanation
-// Add a new method to the Ship constructor that returns the true or false value based on the condition of draft - crew being greater than or equal to 20
+// Add a new method to the Ship constructor that returns the true or false value based on the condition of draft - (crew * 1.5) being greater than 20
 // This method can be added using this.isWorthIt = function() within the constructor
