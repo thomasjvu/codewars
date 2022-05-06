@@ -11,20 +11,16 @@ If the input string is empty or the removal of the first and last items would ca
 
 // Solution
 function array(str){
-  if (arr.length <= 3) {
-    return null
-  } else {
     let newArr = str.split(',')
     newArr.pop()
     newArr.shift()
-    return newArr.join(' ')
-  }
+    let newStr = newArr.join(' ')
+    return (newStr === '') ? null : newStr
 }
 
 // Explanation
-// First, use an if statement to check if the length of the given argument is less than 3 by checking the argument's .length property.
-// If it is less than 3, return null
-// If it is not less than 3, split the given string by using a comma delimiter which will give us an array element that separates each element at the comma as the separation point
+// USe the split method .split(',') to turn the string into an array that removes commas
 // Use the array .pop() method to remove the last element
 // Use the array .shift() method to remove the first element
-// Finally, return a the array that is joined back into a string with a space in between each element using the .join(' ') method
+// Join the array back into a string with a space in between each element using the .join(' ') method
+// If it is a blank string, then return null, otherwise return the new string
