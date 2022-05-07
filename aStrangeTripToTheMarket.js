@@ -18,4 +18,4 @@ function isLockNessMonster(s) {
 const isLockNessMonster = s => ( s.includes("3.50") || s.includes("tree fiddy") || s.includes("three fifty") )
 
 // Explanation
-// Use the logical operators || to determine the different cases where we have truthy or falsy values. In ES6 syntax, we have an implicit return and do not need to state "true or false" as it will be implicitly returned in this type of statement
+// Use the logical operator OR (||) to determine the different cases where we have truthy or falsy values. In ES6 syntax, we have an implicit return and do not need to state "true or false" as it will be implicitly returned in this type of statement
