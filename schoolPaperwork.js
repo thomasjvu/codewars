@@ -20,6 +20,9 @@ function paperwork(n, m) {
   }
 }
 
+// Refactoring
+const paperwork = (n, m) => (n < 0 || m < 0) ? 0 : n * m
+
 // Explanation
 // We have n classmates and m pages
 // So, we should multiply the two given arguments together to get the amount pages we need
