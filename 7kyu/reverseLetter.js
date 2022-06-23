@@ -18,11 +18,14 @@
 
 
 /* Solution */
-
-// function reverseLetter(str) {
-//   return str.split('').reverse().join('').replace(/[^a-z]/ig, '') // carat symbol in brackets means "not ____"
-// }
+function reverseLetter(str) {
+  return str.split('').reverse().join('').replace(/[^a-z]/ig, '') // carat symbol in brackets means "not ____"
+}
 
 // Refactored
 const reverseLetter = str => str.split('').reverse().join('').replace(/[^a-z]/ig, '')
 
+// Another solution
+function reverseLetter(str) {
+  return str.match(/[abcdefghijklmnopqrstuvwxyz]/ig, '').reverse().join('')  
+}
