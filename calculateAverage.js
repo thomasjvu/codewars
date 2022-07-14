@@ -9,9 +9,12 @@
 function findAverage(array) {
   let total = array.reduce((acc, curr) => acc + curr, 0)
   let avg = total / array.length
-  return avg
+  if (array.length > 0) {
+    return avg
+  } else {
+    return 0
+  }
 }
-
 // Explanation
 // Average = Total / # of Elements
 // Get the total using the array `.reduce()` method to add all the numbers into a single element
