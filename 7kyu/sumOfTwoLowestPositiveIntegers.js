@@ -1,0 +1,24 @@
+// (7 kyu) Sum of two lowest positive integers
+/* Instructions
+ * Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+    For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+
+    [10, 343445353, 3453445, 3453545353453] should return 3453455.
+*/
+
+// Solution
+function sumTwoSmallestNumbers(numbers) {  
+ numbers.sort((a,b) => a-b)
+ return numbers[0] + numbers[1]
+}
+
+// Refactored (ES6 Syntax)
+const sumTwoSmallestNumbers = numbers => {
+    numbers.sort((a,b) => a-b)
+    return numbers[0] + numbers[1]
+}
+
+// Explanation
+// To sort the array in ascending order, use the `.sort((a,b) => a-b)` method.
+// Then, return the sum of the first two elements in the array: index 0 and index 1.
