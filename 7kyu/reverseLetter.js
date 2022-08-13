@@ -29,3 +29,9 @@ const reverseLetter = str => str.split('').reverse().join('').replace(/[^a-z]/ig
 function reverseLetter(str) {
   return str.match(/[abcdefghijklmnopqrstuvwxyz]/ig, '').reverse().join('')  
 }
+
+
+// Explanation
+// The string `.match()` method takes the matching conditions of the string and outputs the elements into an array. 
+// We can then use the array `.reverse()` method to reverse the array.
+// Then, we can join the string back together using the array `.join('')` method
