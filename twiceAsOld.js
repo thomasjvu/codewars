@@ -18,4 +18,4 @@ const twiceAsOld = (dadYearsOld, sonYearsOld) => Math.abs((sonYearsOld * 2) - da
 
 // Explanation
 // Multiply the son's age by two, and subtract the dad's age to get the difference
-// Find the absolute value to be sure that the answer is always greater or equal to 0 using the Math.abs() function
+// Find the absolute value to be sure that the answer is always greater or equal to 0 using the Math.abs() function.
