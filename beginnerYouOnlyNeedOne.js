@@ -21,3 +21,8 @@ function check(a, x) {
 // Use a for loop to iterate through each element in the array to check if one of them equals the value
 // If it does, return true, if not, return false
 
+// Refactored
+const check = (a,x) => a.includes(x)
+
+// Explanation
+// This can also be done using the `.includes()` array method, which will check to see if an array contains the given argument, and return true or false accordingly.
