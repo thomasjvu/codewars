@@ -23,4 +23,5 @@ const removeSmallest = numbers => numbers.filter((_, index) => index != numbers.
 // Explanation
 // Filter every index ( we don't need the element ), and return the indexes that are not equal to the index of the minimum value in the numbers array spreaded.
 // This will return a shallow array (so the original isn't mutated) that removes the element of lowest value.
+// The spread syntax expands an iterable to its individual elements
 

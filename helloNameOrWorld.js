@@ -21,4 +21,4 @@ function hello(name) {
 //  Return a template literal starting with Hello, and then checking if name is a truthy value. If it isn't, we'll return 'Hello World!'
 //  If it is a truthy value, then we will take the first element (0th index) and caling the .toUpperCase() method on it, 
 //  and then concatenating everything after the 0th index by calling `.slice(1)` as a lowercase using the .toLowerCase() method.
-// `.slice(1)` takes everything on and after the 1st index (2nd element)
+// `.slice(1)` takes everything on and after the 1st index (2nd element)... remember this!
