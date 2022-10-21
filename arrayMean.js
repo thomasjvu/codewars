@@ -12,3 +12,9 @@ var findAverage = function (nums) {
 }
 
 // Solution (Refactored)
+var findAverage = function (nums) {
+    return nums.reduce((acc, curr) => acc + curr, 0) / nums.length
+}
+
+// Explanation
+// The `reduce()` method enables us to take the previous value and current value as parameters and reduce the items in an array into a single element. Then, we simply divide our reduced array by th elength of the original array.
