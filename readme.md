@@ -11,6 +11,9 @@ This is a repository filled with my completed Codewars challenges (kata). I make
 This repository is made by reentering my solutions to build muscle memory. I also try to go the extra mile and include explanations for my solutions as well as refactoring. Solutions are made in the following languages...
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![SQL](https://img.icons8.com/ios-glyphs/90/000000/sql.png)
+
+
 
 ## **Optimizations**
 
