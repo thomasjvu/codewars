@@ -1,3 +1,5 @@
+// (7 kyu) Training JS#7: if..else and ternary operator
+
 // My Solution
 function saleHotdogs(n){
   if (n<5) {return n*100;}
