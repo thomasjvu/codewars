@@ -16,3 +16,8 @@ function squareDigits(num){
     return Number(squared) // return the squared string as a number
 }
 
+// Refactored
+
+function squareDigits(num){
+    return num = Number(String(num).split('').map(element => element ** 2).join(''))
+}
