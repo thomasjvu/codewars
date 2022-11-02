@@ -26,7 +26,6 @@ const lovefunc = (flower1, flower2) => {
 }
 
 // Refactored (Again)
-// Refactored
 const lovefunc = (flower1, flower2) => {
     if ((flower1 + flower2) % 2 !== 0) {
         return true
@@ -34,6 +33,9 @@ const lovefunc = (flower1, flower2) => {
         return false
     }
 }
+
+// Refactored (Shortest)
+const lovefunc = (flower1, flower2) => (flower1 + flower2) % 2 !== 0
 
 // Explanation
 // If flower1 + flower2 is odd, that means that an even + odd number was added together, so we can get the sum and check if the modulus is not equal to 0.
