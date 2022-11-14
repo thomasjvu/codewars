@@ -24,16 +24,16 @@ If you make it, return "Alive!", if not, return "Shark Bait!".
 */
 
 // Solution
-function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+const shark = (pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) => {
   if (dolphin === true) {
-    return (pontoonDistance / youSpeed > (sharkSpeed/2) / sharkDistance) ? "Alive!" : "Shark Bait!"
+    return (pontoonDistance / youSpeed < sharkDistance / (sharkSpeed / 2)) ? "Alive!" : "Shark Bait!"
   } else if (dolphin === false) {
-    return (pontoonDistance / youSpeed > (sharkSpeed) / sharkDistance) ? "Alive!" : "Shark Bait!"
+    return (pontoonDistance / youSpeed < sharkDistance / sharkSpeed) ? "Alive!" : "Shark Bait!"
   }
 }
 
 // Explanation
-// Create an if..else if statement that checks whether Dolphin is true or false
-// Inside of each statement, return a ternary that checks if the distance divided by youSpeed is greater than the shark speed divided by the shark distance
+// Create an if..else if statement that checks whether Dolphin is true or false, and if its true, we divide the shark speed by 2
+// Inside of each statement, return a ternary that checks if the distance divided by youSpeed is less than the shark speed divided by the shark distance
 // If so, return "Alive"
 // Or else, return "Shark Bait!"
