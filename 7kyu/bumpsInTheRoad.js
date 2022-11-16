@@ -7,6 +7,15 @@ Unfortunately for you, your drive is very bumpy! Given a string showing either f
 
 // Solution
 function bump(x){
+ return ( x.split('_').join('').length <= 15 ) ? "Woohoo!" : "Car Dead" 
+}
+
+// Explanation
+// Use a ternary, and inside have the condition that splits the string into an array and removes the '_' characters, then join it back to a string and check the length
+// If the length is less than or equal to 15, return "Woohoo!" or else, return "Car Dead"
+
+// Solution (regex)
+function bump(x){
   let str = x.replace(/_/g, '')
   if ( str.length > 15) {
     return "Car Dead"
