@@ -13,7 +13,7 @@ Our deck (is preloaded):
 
 // Solution
 function defineSuit(card) {
-    switch (card[1]) {
+    switch (card[card.length - 1]) {
         case '♣':
             return 'clubs'
             break
@@ -30,6 +30,6 @@ function defineSuit(card) {
 }
 
 // Explanation
-// Use a switch..case statement with the element at index 1 for the card string to be switched
+// Use a switch..case statement with the element at the last index for the card string to be switched
 // let each card suit be a case for the switched string element
 // return the corresponding string for each case
