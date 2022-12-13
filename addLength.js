@@ -9,10 +9,9 @@
 
 // Note: String will have at least one element; words will always be separated by a space.
 
-
-// Solution 
+// Solution
 function addLength(str) {
-    return str.split(' ').map((element) => `${element} ${element.length}`)
+    return str.split(' ').map((element) => `${element} ${element.length}`);
 }
 
 // Explanation
