@@ -25,9 +25,15 @@ function contamination(text, char){
     return str
 }
 
-
 // Explanation
 // Declare a new empty string
 // Use a for loop through iterate through each element within the given text.
 // For each iteration, concatenate the given char to the existing string
 // Return the new filled out string
+
+// Refactored
+const contamination = (text, char) => char.repeat(text.length)
+
+// Explanation
+// Use the string `.repeat(x)` method to repeat a string (char) x number of times, where x is the numerical length of the given text parameter.
+
