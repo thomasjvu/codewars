@@ -24,5 +24,30 @@ Note that 121 has twice the digit 1
 
 // Solution
 function nbDig(n, d) {
+
+    let count = 0
+    let arr = []
+
+    for(let i = 0; i <= n; i++) {
+        arr.push(i ** 2)
+    }
+
+    let str = arr.join('')
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == d) {
+            count++
+        }
+    }
+
+    return count
     
 }
+
+// Explanation
+// Initialize a count variable and assign it the value of 0
+// Initialize an empty array variable
+// Loop through each element from 0 to n (inclusive) and push the result into the array
+// Join the array into a string so that we can loop through each character or digit in the string
+// If the characer is equal to d in value (not value and type), then add 1 to the count
+// FInally, return the count
