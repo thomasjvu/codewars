@@ -17,7 +17,8 @@ function giveMeFive(obj) {
     for (const key in obj) {
         if (key.length == 5) {
             arr.push(key)
-        } else if (obj[key].length == 5) {
+        } 
+        if (obj[key].length == 5) {
             arr.push(obj[key])
         }
     }
