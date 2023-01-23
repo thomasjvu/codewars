@@ -16,3 +16,12 @@ function factorial(n) {
         return n * factorial(n - 1)
     }
 }
+
+// Explanation
+// Let's say n = 5
+// 5 * factorial (5 - 1)
+// 4 * factoiral (4 - 1)
+// 3 * factorial (3 - 1)
+// 2 * factorial (2 - 1)
+// 1
+
